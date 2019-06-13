@@ -1,0 +1,6 @@
+framework module Pods_J_SocialLogin {
+  umbrella header "Pods-J.SocialLogin-umbrella.h"
+
+  export *
+  module * { export * }
+}

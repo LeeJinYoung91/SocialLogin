@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="J_SocialLogin" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNg-7T-5kF">
+                                <rect key="frame" x="148" y="84" width="118" height="30"/>
+                                <color key="backgroundColor" red="0.77274305555555556" green="0.61122685185185188" blue="0.79282407407407407" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LoginWithGoogle">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithGoogle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="B1p-ar-yC0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WEk-VN-f9W">
+                                <rect key="frame" x="152.5" y="294" width="109" height="30"/>
+                                <color key="backgroundColor" red="0.77274305560000001" green="0.61122685190000003" blue="0.7928240741" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LoginWithNaver">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithNaver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zX4-QI-a4t"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cbh-oJ-sW8">
+                                <rect key="frame" x="149.5" y="224" width="115" height="30"/>
+                                <color key="backgroundColor" red="0.77274305560000001" green="0.61122685190000003" blue="0.7928240741" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LoginWithTwitter">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithTwitter:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Q0z-cH-Jed"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWH-9P-fny">
+                                <rect key="frame" x="151.5" y="154" width="111" height="30"/>
+                                <color key="backgroundColor" red="0.77274305560000001" green="0.61122685190000003" blue="0.7928240741" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="LoginWithKakao">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginWithKakaoTalk:" destination="BYZ-38-t0r" eventType="touchUpInside" id="W5f-9o-8I6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Cbh-oJ-sW8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4Ej-BO-08d"/>
+                            <constraint firstItem="YNg-7T-5kF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="Opi-bI-Erk"/>
+                            <constraint firstItem="hWH-9P-fny" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S3U-Go-hCW"/>
+                            <constraint firstItem="Cbh-oJ-sW8" firstAttribute="top" secondItem="hWH-9P-fny" secondAttribute="bottom" constant="40" id="VXZ-xB-i1y"/>
+                            <constraint firstItem="WEk-VN-f9W" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dMG-JO-ZGI"/>
+                            <constraint firstItem="YNg-7T-5kF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hkZ-G3-fNM"/>
+                            <constraint firstItem="WEk-VN-f9W" firstAttribute="top" secondItem="Cbh-oJ-sW8" secondAttribute="bottom" constant="40" id="qWU-ev-rTp"/>
+                            <constraint firstItem="hWH-9P-fny" firstAttribute="top" secondItem="YNg-7T-5kF" secondAttribute="bottom" constant="40" id="u5K-6A-iMm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
